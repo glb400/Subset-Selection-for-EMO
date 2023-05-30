@@ -1,18 +1,4 @@
 function [Record,Subset,time]=GSEMOIGDp(PopObj,selNum)
-%%  ATTN
-%   ATTN: This package is free for academic usage. You can run it at your own risk. For other purposes, please contact Prof. Zhi-Hua Zhou (zhouzh@nju.edu.cn)
-%%  ATTN2
-%   ATTN2: This package was developed by Mr. Chao Qian (qianc@lamda.nju.edu.cn). For any problem concerning the code, please feel free to contact Mr. Qian.
-%%  Some varables used in the code
-%   input: 
-%      NOTE THAT we use a Boolean string "1001....1100" to represent a subset of variables, where "1" means that the corresponding variable is selected, and "0" means ignoring the variable.
-%      n: the total number of variables. 
-%      f: a given criterion to be optimized; its input should be a subset of variables, i.e., a Boolean string of length n; its output should be a real value.
-%      k: the constraint on the number of selected variables.
-%      NOTE THAT we assume that f is to be minimized.
-%   ouptut: 
-%      selectedVariables: a Boolean string of length n representing the selected variables, the number of which is not larger than k. 
-
     tic;
     profile on;
     %get size of Population.Objs
